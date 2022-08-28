@@ -54,8 +54,8 @@ def create_key(username):
 def send_plain_email(username, access_key):
     ses_client = boto3.client("ses", region_name="us-east-1")
     CHARSET = "UTF-8"
-    SENDER = "soltau09@gmail.com"
-    RECIPIENT = "redcom969@gmail.com"
+    SENDER = "it@company.com"
+    RECIPIENT = "it@company.com"
     SUBJECT = "AWS IAM - Credenitals Expired!"
     response = ses_client.send_email(
         Destination={

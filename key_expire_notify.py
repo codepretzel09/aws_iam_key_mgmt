@@ -32,8 +32,8 @@ def diff_time(keycreatedtime):
 def send_plain_email(username, access_key):
     ses_client = boto3.client("ses", region_name="us-east-1")
     CHARSET = "UTF-8"
-    SENDER = "soltau09@gmail.com"
-    RECIPIENT = "redcom969@gmail.com"
+    SENDER = "it@company.com"
+    RECIPIENT = "it@company.com"
     SUBJECT = "Red Canary AWS IAM - Credenitals Notifaction"
     response = ses_client.send_email(
         Destination={
