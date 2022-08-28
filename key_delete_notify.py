@@ -79,7 +79,7 @@ def send_plain_email(username, access_key):
         Source= SENDER,
     )
 
-# iterate accross users that match a desired pattern and call desired functions to deactivate, delete, create, or notify
+# iterate accross users that match a desired pattern and call desired functions to deactivate, delete, create, and/or notify
 def lambda_handler(event, context):
     details = iam_client.list_users(MaxItems=300)
     users = details['Users']
