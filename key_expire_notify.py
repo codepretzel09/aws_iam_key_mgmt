@@ -1,4 +1,4 @@
-# Check for keys about to expire and notifiy users along with the IT team
+ffffffffffffffffffffffffffff# Check for keys about to expire and notifiy users along with the IT team
 import boto3
 import json
 from botocore.exceptions import ClientError
@@ -34,7 +34,7 @@ def send_plain_email(username, access_key):
     CHARSET = "UTF-8"
     SENDER = "it@company.com"
     RECIPIENT = "it@company.com"
-    SUBJECT = "Red Canary AWS IAM - Credenitals Notifaction"
+    SUBJECT = "AWS IAM - Credenitals Notifaction"
     response = ses_client.send_email(
         Destination={
             "ToAddresses": [
