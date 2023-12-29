@@ -46,7 +46,7 @@ def send_plain_email(username, access_key):
             "Body": {
                 "Text": {
                     "Charset": CHARSET,
-                    "Data": username + " - " + access_key + "\nYour Red Canary IAM Keys are set to expire in 10 days. \nPlease open a ticket with IT to request new credentials.",
+                    "Data": username + " - " + access_key + "\nYour IAM Keys are set to expire in 10 days. \nPlease open a ticket with IT to request new credentials.",
                 }
             },
             "Subject": {
